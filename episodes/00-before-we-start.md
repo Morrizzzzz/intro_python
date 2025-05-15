@@ -23,7 +23,8 @@ exercises: 0
 ## What is Python?
 
 Python is a general purpose programming language that supports rapid development of data analytics
-applications.  The word "Python" is used to refer to both, the programming language and the tool
+applications. In addition Python is the most widely used programming language in the Geospatial domain.
+The word "Python" is used to refer to both, the programming language and the tool
 that executes the scripts written in Python language.
 
 Its main advantages are:
@@ -48,8 +49,11 @@ Its main advantages are:
   Data analysis written as a Python script can be reproduced on any platform.  Moreover, if you
   collect more or correct existing data, you can quickly re-run your analysis!
   
-  An increasing number of journals and funding agencies expect analyses to be reproducible,
-  so knowing Python will give you an edge with these requirements.
+ An increasing number of academic journals and funding agencies expect analyses to be reproducible. Also when you 
+  are working as a GIS expert you do not want to rerun your models over and over again by clicking on certain buttons and tools.
+  In addition, once you learn the python ecosystem you will notice that you can integrate all kind of data analysis and methods
+  from other domains allowing you really boost your analysis and data processing toolbox. 
+  Knowing Python will give you an edge with these requirements and opens a world of opportunities.
 
 - **Versatility:**
   Python is a versatile language that integrates with many existing applications to enable something
@@ -133,62 +137,6 @@ important to note that *"the best"* computational solution must consider factors
 Who is using the program, what resources/funds does your team have for this project, and the available
 timeline all shape and mold what "best" may be.
 
-#### If you are working with Jupyter notebook:
-
-You can type Python code into a code cell and then execute the code by pressing
-<kbd>Shift</kbd>\+<kbd>Return</kbd>.
-Output will be printed directly under the input cell.
-You can recognise a code cell by the `In[ ]:` at the beginning of the cell and output by `Out[ ]:`.
-Pressing the **\+** button in the menu bar will add a new cell.
-All your commands as well as any output will be saved with the notebook.
-
-#### If you are working with Spyder:
-
-You can either use the console or use script files (plain text files that contain your code).  The
-console pane (in Spyder, the bottom right panel) is the place where commands written in the Python
-language can be typed and executed immediately by the computer. It is also where the results will be
-shown.  You can execute commands directly in the console by pressing <kbd>Return</kbd>, but they
-will be "lost" when you close the session.  Spyder uses the [IPython](https://ipython.org) console by
-default.
-
-Since we want our code and workflow to be reproducible, it is better to type the commands in
-the script editor, and save them as a script. This way, there is a complete record of what we did,
-and anyone (including our future selves!) has an easier time reproducing the results on their computer.
-
-Spyder allows you to execute commands directly from the script editor by using the run buttons on
-top.  To run the entire script click *Run file* or press <kbd>F5</kbd>, to run the current line
-click *Run selection or current line* or press <kbd>F9</kbd>, other run buttons allow to run script
-cells or go into debug mode. When using <kbd>F9</kbd>, the command on the current line in the script
-(indicated by the cursor) or all of the commands in the currently selected text will be sent to the
-console and executed.
-
-At some point in your analysis you may want to check the content of a variable or the structure of
-an object, without necessarily keeping a record of it in your script. You can type these commands
-and execute them directly in the console. Spyder provides the
-<kbd>Ctrl</kbd>\+<kbd>Shift</kbd>\+<kbd>E</kbd> and <kbd>Ctrl</kbd>\+<kbd>Shift</kbd>\+<kbd>I</kbd>
-shortcuts to allow you to jump between the script and the console panes.
-
-If Python is ready to accept commands, the IPython console shows an `In [..]:` prompt with the
-current console line number in `[]`. If it receives a command (by typing, copy-pasting or sent from
-the script editor), Python will execute it, display the results in the `Out [..]:` cell, and come
-back with a new `In [..]:` prompt waiting for new commands.
-
-If Python is still waiting for you to enter more data because it isn't complete yet, the console
-will show a `...:` prompt. It means that you haven't finished entering a complete command.  This can
-be because you have not typed a closing parenthesis (`)`, `]`, or `}`) or quotation mark.  When this
-happens, and you thought you finished typing your command, click inside the console window and press
-<kbd>Esc</kbd>; this will cancel the incomplete command and return you to the `In [..]:` prompt.
-
-## How to learn more after the workshop?
-
-The material we cover during this workshop will give you an initial taste of how you can use Python
-to analyze data for your own research. However, you will need to learn more to do advanced
-operations such as cleaning your dataset, using statistical methods, or creating beautiful graphics.
-The best way to become proficient and efficient at Python, as with any other tool, is to use it to
-address your actual research questions. As a beginner, it can feel daunting to have to write a
-script from scratch, and given that many people make their code available online, modifying existing
-code to suit your purpose might make it easier for you to get started.
-
 ## Seeking help
 
 - check under the *Help* menu
@@ -248,7 +196,7 @@ instead of using a subset of your real dataset, create a small (3 columns, 5 row
 
 - [Dive into Python 3][dive-into-python3]
 
-
+- [Think python][think-python]
 
 [stack-overflow]: https://stackoverflow.com
 [anaconda-community]: https://www.anaconda.com/community
@@ -261,12 +209,13 @@ instead of using a subset of your real dataset, create a small (3 columns, 5 row
 [pypi]: https://pypi.org/
 [python-guide]: https://docs.python-guide.org
 [dive-into-python3]: https://diveintopython3.net/
+[think-python]: https://greenteapress.com/wp/think-python-3rd-edition/
+
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Python is an open source and platform independent programming language.
-- Jupyter Notebook and the Spyder IDE are great tools to code in and interact with Python. With the large Python community it is easy to find help on the internet.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

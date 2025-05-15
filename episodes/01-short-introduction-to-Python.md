@@ -20,54 +20,37 @@ exercises: 5
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Interpreter
+## Jupyter notebooks
 
-Python is an interpreted language which can be used in two ways:
-
-- "Interactively": when you use it as an "advanced calculator" executing
-  one command at a time. To start Python in this mode, execute `python`
-  on the command line:
+During this workshop we are using jupyter notebooks. An advantage of Jupyter notebooks is that they are very interactive and that you can easily rerun parts of your code. 
+To start a notebook enter the following command in your terminal (use the **Anaconda prompt** on **Windows**) ( n.b. make sure to have the geospatial conda environment activated):
 
 ```bash
-$ python
+jupyter lab
 ```
 
-```output
-Python 3.5.1 (default, Oct 23 2015, 18:05:06)
-[GCC 4.8.3] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
+Within a jupyter notebook you can type Python code into a code cell and then execute the code by pressing
+<kbd>Shift</kbd>\+<kbd>Return</kbd>.
+Output will be printed directly under the input cell.
+You can recognise a code cell by the `In[ ]:` at the beginning of the cell and output by `Out[ ]:`.
+Pressing the **\+** button in the menu bar will add a new cell.
+All your commands as well as any output will be saved with the notebook.
 
-Chevrons `>>>` indicate an interactive prompt in Python, meaning that it is waiting for your
-input.
-
-```python
-2 + 2
-```
-
-```output
-4
-```
+Now go to the first cell and type:
 
 ```python
 print("Hello World")
 ```
 
-```output
-Hello World
-```
+Running the cell in your notebook will generate:
 
-- "Scripting" Mode: executing a series of "commands" saved in text file,
-  usually with a `.py` extension after the name of your file:
-
-```bash
-$ python my_script.py
-```
 
 ```output
 Hello World
 ```
+
+With this command we ask python to print the string "Hello world".
+
 
 ## Introduction to variables in Python
 
@@ -76,10 +59,10 @@ Hello World
 One of the most basic things we can do in Python is assign values to variables:
 
 ```python
-text = "Data Carpentry"  # An example of assigning a value to a new text variable,
+text = "GIS"             # An example of assigning a value to a new text variable,
                          # also known as a string data type in Python
 number = 42              # An example of assigning a numeric value, or an integer data type
-pi_value = 3.1415        # An example of assigning a floating point value (the float data type)
+coordinate = 52.377956   # An example of assigning a floating point value (the float data type)
 ```
 
 Here we've assigned data to the variables `text`, `number` and `pi_value`,
@@ -91,7 +74,7 @@ text
 ```
 
 ```output
-"Data Carpentry"
+"GIS"
 ```
 
 Everything in Python has a type. To get the type of something, we can pass it
@@ -114,7 +97,7 @@ type(number)
 ```
 
 ```python
-type(pi_value)
+type(coordinate)
 ```
 
 ```output
@@ -132,7 +115,7 @@ print(text)
 ```
 
 ```output
-Data Carpentry
+GIS
 ```
 
 ```python
@@ -143,45 +126,11 @@ print(number)
 42
 ```
 
-This may seem redundant, but in fact it's the only way to display output in a script:
-
-*example.py*
-
-```python
-# A Python script file
-# Comments in Python start with #
-# The next line assigns the string "Data Carpentry" to the variable "text".
-text = "Data Carpentry"
-
-# The next line does nothing!
-text
-
-# The next line uses the print function to print out the value we assigned to "text"
-print(text)
-```
-
-*Running the script*
-
-```bash
-$ python example.py
-```
-
-```output
-Data Carpentry
-```
-
-Notice that "Data Carpentry" is printed only once.
-
 **Tip**: `print` and `type` are built-in functions in Python. Later in this
 lesson, we will introduce methods and user-defined functions.
 [The Python documentation](https://docs.python.org/3/)
 is excellent for reference on the differences between them.
 
-**Tip**: When editing scripts like *example.py*, be careful not to use word
-processors such as MS Word, as they may introduce extra information that
-confuses Python. In this lesson we will be using either Jupyter notebooks or
-the Spyder IDE, and for your everyday work you may also choose any text editor
-such as Notepad++, VSCode, Vim, or Emacs.
 
 ### Operators
 
@@ -289,10 +238,7 @@ for num in numbers:
 ```
 
 **Indentation** is very important in Python. Note that the second line in the
-example above is indented. Just like three chevrons `>>>` indicate an
-interactive prompt in Python, the three dots `...` are Python's prompt for
-multiple lines. This is Python's way of marking a block of code. [Note: you
-do not type `>>>` or `...`.]
+example above is indented. 
 
 To add elements to the end of a list, we can use the `append` method. Methods
 are a way to interact with an object (a list, for example). We can invoke a
